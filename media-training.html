@@ -299,8 +299,56 @@
 <!-- 3 AXES -->
 <section class="axes" aria-labelledby="axes-title">
   <div class="container">
-    <div class="section-photo">
-      <img src="img/micro.avif" alt="Microphone — Media training et prise de parole, Media Impact Genève" loading="lazy" style="filter:grayscale(40%) sepia(20%) hue-rotate(330deg) saturate(1.2);">
+    <div style="width:100%;background:var(--charbon);padding:3rem 2rem;margin:2rem 0;position:relative;overflow:hidden;">
+      <!-- Fond décoratif -->
+      <div style="position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,0.012) 0px,rgba(255,255,255,0.012) 1px,transparent 1px,transparent 80px);pointer-events:none;"></div>
+      <div style="max-width:600px;margin:0 auto;position:relative;z-index:1;">
+        <svg viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg" aria-label="Media training — prise de parole">
+          <!-- Ligne d'onde sonore stylisée -->
+          <g stroke="#D4451A" stroke-linecap="round">
+            <line x1="20" y1="80" x2="20" y2="80" stroke-width="2" opacity="0.3"/>
+            <line x1="40" y1="70" x2="40" y2="90" stroke-width="2" opacity="0.4"/>
+            <line x1="60" y1="55" x2="60" y2="105" stroke-width="2" opacity="0.5"/>
+            <line x1="80" y1="40" x2="80" y2="120" stroke-width="2" opacity="0.6"/>
+            <line x1="100" y1="30" x2="100" y2="130" stroke-width="2" opacity="0.7"/>
+            <line x1="120" y1="50" x2="120" y2="110" stroke-width="2" opacity="0.8"/>
+            <line x1="140" y1="35" x2="140" y2="125" stroke-width="2.5" opacity="0.9"/>
+            <line x1="160" y1="20" x2="160" y2="140" stroke-width="3" opacity="1"/>
+            <line x1="180" y1="35" x2="180" y2="125" stroke-width="2.5" opacity="0.9"/>
+            <line x1="200" y1="45" x2="200" y2="115" stroke-width="2" opacity="0.8"/>
+          </g>
+          <!-- Micro SVG central -->
+          <g transform="translate(240, 10)">
+            <!-- Corps du micro -->
+            <rect x="35" y="0" width="30" height="70" rx="15" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2"/>
+            <!-- Grille micro -->
+            <line x1="35" y1="25" x2="65" y2="25" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+            <line x1="35" y1="35" x2="65" y2="35" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+            <line x1="35" y1="45" x2="65" y2="45" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+            <!-- Point rouge -->
+            <circle cx="50" cy="12" r="4" fill="#D4451A"/>
+            <!-- Pied -->
+            <path d="M25 70 Q50 85 75 70" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+            <line x1="50" y1="85" x2="50" y2="110" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+            <line x1="30" y1="110" x2="70" y2="110" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+          </g>
+          <!-- Onde droite -->
+          <g stroke="#D4451A" stroke-linecap="round">
+            <line x1="400" y1="45" x2="400" y2="115" stroke-width="2" opacity="0.8"/>
+            <line x1="420" y1="35" x2="420" y2="125" stroke-width="2.5" opacity="0.9"/>
+            <line x1="440" y1="20" x2="440" y2="140" stroke-width="3" opacity="1"/>
+            <line x1="460" y1="35" x2="460" y2="125" stroke-width="2.5" opacity="0.9"/>
+            <line x1="480" y1="50" x2="480" y2="110" stroke-width="2" opacity="0.8"/>
+            <line x1="500" y1="55" x2="500" y2="105" stroke-width="2" opacity="0.7"/>
+            <line x1="520" y1="65" x2="520" y2="95" stroke-width="2" opacity="0.6"/>
+            <line x1="540" y1="72" x2="540" y2="88" stroke-width="2" opacity="0.5"/>
+            <line x1="560" y1="76" x2="560" y2="84" stroke-width="2" opacity="0.4"/>
+            <line x1="580" y1="80" x2="580" y2="80" stroke-width="2" opacity="0.3"/>
+          </g>
+          <!-- Texte -->
+          <text x="300" y="148" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="11" font-weight="500" fill="rgba(255,255,255,0.3)" letter-spacing="6">MEDIA TRAINING</text>
+        </svg>
+      </div>
     </div>
     <div class="section-label">Le dispositif</div>
     <h2 id="axes-title" style="font-size:clamp(26px,3vw,40px);max-width:560px;">Trois axes pour une prise de parole maîtrisée</h2>
