@@ -214,6 +214,18 @@
       color: rgba(255,255,255,0.6);
       line-height: 1.75;
     }
+
+    .omega-hero-visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .omega-svg-container {
+      width: 100%;
+      max-width: 380px;
+      position: relative;
+    }
     .omega-hero-stats {
       display: flex;
       flex-direction: column;
@@ -240,7 +252,19 @@
     }
     @media (max-width: 900px) {
       .omega-hero-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .omega-hero-stats { border-left: none; border-top: 1px solid rgba(255,255,255,0.08); padding-left: 0; padding-top: 2rem; flex-direction: row; flex-wrap: wrap; gap: 1.5rem; }
+  
+    .omega-hero-visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .omega-svg-container {
+      width: 100%;
+      max-width: 380px;
+      position: relative;
+    }
+    .omega-hero-stats { border-left: none; border-top: 1px solid rgba(255,255,255,0.08); padding-left: 0; padding-top: 2rem; flex-direction: row; flex-wrap: wrap; gap: 1.5rem; }
     }
   </style>
 </head>
