@@ -3,202 +3,1033 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | Actualités & opérations | Media Impact Genève</title>
-  <meta name="description" content="L'actualité des événements couverts et des opérations menées par Media Impact — relations médias, communication de crise, AIO/VSEO.">
+  <title>Agence RP &amp; Intelligence de Réputation | Media Impact Genève</title>
+  <meta name="description" content="Media Impact, agence de relations publiques à Genève depuis 1990. Expertise en relations médias, communication de crise et ingénierie de réputation algorithmique (AIO/VSEO).">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.mediaimpact.ch/blog/">
-  <meta property="og:title" content="Blog | Actualités & opérations | Media Impact Genève">
-  <meta property="og:description" content="L'actualité des événements couverts et des opérations menées par Media Impact.">
+  <link rel="canonical" href="https://www.mediaimpact.ch/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Agence RP &amp; Intelligence de Réputation | Media Impact Genève">
+  <meta property="og:description" content="Media Impact, agence de relations publiques à Genève depuis 1990. Relations médias, communication de crise et ingénierie de réputation algorithmique (AIO/VSEO).">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.mediaimpact.ch/blog/">
+  <meta property="og:url" content="https://www.mediaimpact.ch/">
   <meta property="og:site_name" content="Media Impact">
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agence RP &amp; Intelligence de Réputation | Media Impact Genève">
+  <meta name="twitter:description" content="Media Impact, agence de relations publiques à Genève depuis 1990. Relations médias, communication de crise et ingénierie de réputation algorithmique (AIO/VSEO).">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --charbon: #111111; --brique: #D4451A; --brique-hover: #B83A15;
-      --papier: #FAFAF8; --graphite: #374151; --graphite-light: #6B7280;
-      --brume: #E5E7EB; --brume-pale: #F3F4F6;
-      --font-display: 'Syne', sans-serif; --font-body: 'DM Sans', sans-serif;
-      --nav-h: 64px; --max-w: 1180px;
+
+  <!-- JSON-LD Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Media Impact",
+    "url": "https://www.mediaimpact.ch",
+    "description": "Agence de relations publiques et d'ingénierie de réputation fondée à Genève en 1990. Expertise en relations médias, communication de crise, media training et optimisation pour l'intelligence artificielle (AIO/VSEO).",
+    "foundingDate": "1990",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rue de Lausanne 42",
+      "addressLocality": "Genève",
+      "postalCode": "1201",
+      "addressCountry": "CH"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+41-22-732-59-97",
+      "contactType": "customer service",
+      "email": "info@mediaimpact.ch",
+      "availableLanguage": ["French", "English"]
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Gérard Sermier",
+      "jobTitle": "Associé fondateur",
+      "description": "Journaliste et expert en relations publiques, fondateur de Media Impact en 1990. Directeur de communication des missions Breitling Orbiter et collaborateur de Bertrand Piccard pour Solar Impulse."
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100054527617443",
+      "https://www.linkedin.com/company/media-impact-rp/"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Agence RP & Intelligence de Réputation | Media Impact Genève",
+    "url": "https://www.mediaimpact.ch/",
+    "description": "Media Impact, agence de relations publiques à Genève depuis 1990.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Media Impact"
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: var(--font-body); font-size: 16px; line-height: 1.7; color: var(--graphite); background: var(--papier); -webkit-font-smoothing: antialiased; }
-    img { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
-    ul { list-style: none; }
-    h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.01em; line-height: 1.15; color: var(--charbon); }
-    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; }
+  }
+  </script>
 
-    /* NAV */
-    .nav { position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h); z-index: 100; background: var(--charbon); border-bottom: 1px solid rgba(255,255,255,0.06); }
-    .nav-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-    .nav-logo-link { display: flex; align-items: center; flex-shrink: 0; }
-    .nav-links { display: flex; align-items: center; gap: 0.25rem; }
-    .nav-links a { font-family: var(--font-body); font-size: 13px; font-weight: 400; letter-spacing: 0.04em; color: rgba(255,255,255,0.85); padding: 6px 12px; border-radius: 3px; transition: color 0.2s, background 0.2s; white-space: nowrap; }
-    .nav-links a:hover { color: #FAFAF8; background: rgba(255,255,255,0.06); }
-    .nav-links a.active { color: #FAFAF8; background: rgba(255,255,255,0.06); }
-    .nav-cta { font-family: var(--font-body); font-size: 12px; font-weight: 500; color: #FAFAF8 !important; background: var(--brique) !important; padding: 7px 16px !important; border-radius: 2px !important; transition: background 0.2s !important; }
-    .nav-cta:hover { background: var(--brique-hover) !important; }
-    .nav-burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
-    .nav-burger span { display: block; width: 22px; height: 1.5px; background: rgba(250,250,248,0.7); transition: transform 0.3s, opacity 0.3s; }
-    .nav-burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-    .nav-burger.open span:nth-child(2) { opacity: 0; }
-    .nav-burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-    .nav-mobile { display: none; position: fixed; top: var(--nav-h); left: 0; right: 0; background: var(--charbon); border-bottom: 1px solid rgba(255,255,255,0.06); padding: 1.5rem 2rem 2rem; z-index: 99; flex-direction: column; gap: 0.5rem; }
-    .nav-mobile.open { display: flex; }
-    .nav-mobile a { font-family: var(--font-body); font-size: 15px; color: rgba(250,250,248,0.7); padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-    .nav-mobile a:hover { color: #FAFAF8; }
-    .nav-mobile .nav-cta-mobile { margin-top: 1rem; display: inline-block; background: var(--brique); color: #FAFAF8; font-weight: 500; padding: 12px 24px; border-radius: 2px; text-align: center; border-bottom: none; }
+  <style>
+    /* ═══ DESIGN SYSTEM GLOBAL ═══ */
+/* ═══════════════════════════════════════════════════════════
+   MEDIA IMPACT — Design System global
+   Direction C&nbsp;: Éditorial moderne
+   Charbon · Brique · Papier · Syne + DM Sans
+   ═══════════════════════════════════════════════════════════ */
 
-    /* FOOTER */
-    footer { background: #0A0A0F; padding: 4rem 0 2rem; }
-    .footer-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; }
-    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.06); margin-bottom: 2rem; }
-    .footer-desc { font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 1.5rem; max-width: 280px; }
-    .footer-contact-line { font-size: 13px; color: rgba(255,255,255,0.7); margin-bottom: 0.4rem; }
-    .footer-contact-line a:hover { color: var(--brique); }
-    .footer-col-title { font-family: var(--font-body); font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 1rem; }
-    .footer-col-links { display: flex; flex-direction: column; gap: 0.5rem; }
-    .footer-col-links a { font-size: 14px; color: rgba(255,255,255,0.65); transition: color 0.2s; }
-    .footer-col-links a:hover { color: #FAFAF8; }
-    .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
-    .footer-copy { font-size: 11px; color: rgba(250,250,248,0.2); }
-    .footer-socials { display: flex; gap: 1rem; }
-    .footer-socials a { font-size: 11px; color: rgba(250,250,248,0.3); letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
-    .footer-socials a:hover { color: #FAFAF8; }
+/* ─── DESIGN TOKENS ─────────────────────────────────────── */
+:root {
+  --charbon:        #111111;
+  --brique:         #D4451A;
+  --brique-hover:   #B83A15;
+  --papier:         #FAFAF8;
+  --graphite:       #374151;
+  --graphite-light: #6B7280;
+  --brume:          #E5E7EB;
+  --brume-pale:     #F3F4F6;
+  --blanc:          #FFFFFF;
 
-    /* ═══ CSS SPÉCIFIQUE BLOG ═══ */
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
 
-    /* HERO */
+  --nav-h: 64px;
+  --max-w: 1180px;
+}
+
+/* ─── RESET ──────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--graphite);
+  background: var(--papier);
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* ─── TYPOGRAPHIE GLOBALE ────────────────────────────────── */
+/*
+   Règle centrale&nbsp;: tous les titres en Syne utilisent
+   font-weight: 700 et letter-spacing: -0.01em
+   pour une lisibilité optimale.
+   Les classes spécifiques peuvent affiner (taille, couleur)
+   mais ne doivent pas surcharger ces deux propriétés.
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  color: var(--charbon);
+}
+
+/* ─── UTILITIES ──────────────────────────────────────────── */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* ─── ANIMATIONS ─────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.reveal {
+  opacity: 0;
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.reveal-1 { animation-delay: 0.1s; }
+.reveal-2 { animation-delay: 0.22s; }
+.reveal-3 { animation-delay: 0.34s; }
+.reveal-4 { animation-delay: 0.46s; }
+.reveal-5 { animation-delay: 0.58s; }
+
+/* ─── NAVIGATION ─────────────────────────────────────────── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-h);
+  z-index: 100;
+  background: var(--charbon);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: background 0.3s;
+}
+.nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #FAFAF8;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.nav-logo-link { display: flex; align-items: center; flex-shrink: 0; }
+    .nav-logo-link svg { display: block; }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.nav-links a {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.72);
+  padding: 6px 12px;
+  border-radius: 3px;
+  transition: color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+.nav-links a:hover {
+  color: #FAFAF8;
+  background: rgba(255,255,255,0.06);
+}
+.nav-links a.active { color: #FAFAF8; }
+.nav-cta {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: #FAFAF8&nbsp;!important;
+  background: var(--brique)&nbsp;!important;
+  padding: 7px 16px&nbsp;!important;
+  border-radius: 2px&nbsp;!important;
+  letter-spacing: 0.04em;
+  transition: background 0.2s&nbsp;!important;
+}
+.nav-cta:hover {
+  background: var(--brique-hover)&nbsp;!important;
+  color: #FAFAF8&nbsp;!important;
+}
+
+/* Mobile nav */
+.nav-burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.nav-burger span {
+  display: block;
+  width: 22px; height: 1.5px;
+  background: rgba(250,250,248,0.7);
+  transition: transform 0.3s, opacity 0.3s;
+}
+.nav-burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-burger.open span:nth-child(2) { opacity: 0; }
+.nav-burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.nav-mobile {
+  display: none;
+  position: fixed;
+  top: var(--nav-h);
+  left: 0; right: 0;
+  background: var(--charbon);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 1.5rem 2rem 2rem;
+  z-index: 99;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.nav-mobile.open { display: flex; }
+.nav-mobile a {
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: rgba(250,250,248,0.7);
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.nav-mobile a:hover { color: #FAFAF8; }
+.nav-mobile .nav-cta-mobile {
+  margin-top: 1rem;
+  display: inline-block;
+  background: var(--brique);
+  color: #FAFAF8;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 2px;
+  text-align: center;
+  border-bottom: none;
+}
+
+/* ─── BOUTONS COMMUNS ────────────────────────────────────── */
+.btn-primary {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #FAFAF8;
+  background: var(--brique);
+  padding: 13px 28px;
+  border-radius: 2px;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-primary:hover {
+  background: var(--brique-hover);
+  transform: translateY(-1px);
+}
+.btn-primary-lg {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #FAFAF8;
+  background: var(--brique);
+  padding: 15px 36px;
+  border-radius: 2px;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-primary-lg:hover {
+  background: var(--brique-hover);
+  transform: translateY(-1px);
+}
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--graphite);
+  border-bottom: 1px solid var(--brume);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.btn-secondary:hover {
+  color: var(--brique);
+  border-color: var(--brique);
+}
+.btn-secondary svg { transition: transform 0.2s; }
+.btn-secondary:hover svg { transform: translateX(3px); }
+.btn-ghost-lg {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: rgba(250,250,248,0.6);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 14px 32px;
+  border-radius: 2px;
+  transition: border-color 0.2s, color 0.2s;
+}
+.btn-ghost-lg:hover {
+  border-color: rgba(255,255,255,0.4);
+  color: #FAFAF8;
+}
+
+/* ─── SECTION LABEL ──────────────────────────────────────── */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--graphite-light);
+  margin-bottom: 2.5rem;
+}
+.section-label::after {
+  content: '';
+  display: block;
+  flex: 1;
+  height: 1px;
+  background: var(--brume);
+}
+
+/* ─── PAGE HEADER (pages intérieures) ───────────────────── */
+.page-header {
+  padding-top: calc(var(--nav-h) + 4rem);
+  padding-bottom: 4rem;
+  background: var(--charbon);
+  position: relative;
+  overflow: hidden;
+}
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255,255,255,0.012) 0px,
+    rgba(255,255,255,0.012) 1px,
+    transparent 1px,
+    transparent 80px
+  );
+  pointer-events: none;
+}
+.page-header-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+.page-header-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 1.25rem;
+}
+.page-header-eyebrow-dot {
+  width: 6px; height: 6px;
+  background: var(--brique);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.page-header h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 52px);
+  letter-spacing: -0.01em;
+  color: #FAFAF8;
+  line-height: 1.1;
+  max-width: 720px;
+  margin-bottom: 1.25rem;
+}
+.page-header h1 em {
+  font-style: normal;
+  color: var(--brique);
+}
+.page-header-sub {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+  max-width: 580px;
+}
+
+/* ─── TICKER / CLIENTS ───────────────────────────────────── */
+.ticker-wrap {
+  background: var(--charbon);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  overflow: hidden;
+  padding: 0;
+}
+.ticker-inner { display: flex; align-items: center; }
+.ticker-label {
+  flex-shrink: 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  padding: 0 2rem;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  white-space: nowrap;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+.ticker-track {
+  display: flex;
+  gap: 3.5rem;
+  padding: 0 2rem;
+  animation: ticker 22s linear infinite;
+  white-space: nowrap;
+  align-items: center;
+  height: 56px;
+}
+.ticker-track:hover { animation-play-state: paused; }
+.ticker-item {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.75);
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.ticker-item.sep {
+  color: var(--brique);
+  font-size: 8px;
+}
+
+/* ─── FAQ (composant partagé) ────────────────────────────── */
+.faq-items { display: flex; flex-direction: column; }
+.faq-item { border-bottom: 1px solid var(--brume); overflow: hidden; }
+.faq-q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.4rem 0;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--charbon);
+  line-height: 1.35;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+.faq-q:hover { color: var(--brique); }
+.faq-icon {
+  flex-shrink: 0;
+  width: 20px; height: 20px;
+  border: 1px solid var(--brume);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+}
+.faq-item.open .faq-icon { background: var(--brique); border-color: var(--brique); }
+.faq-icon svg { transition: transform 0.3s; }
+.faq-item.open .faq-icon svg { transform: rotate(45deg); }
+.faq-icon svg line { stroke: var(--graphite); }
+.faq-item.open .faq-icon svg line { stroke: #fff; }
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.22,1,0.36,1);
+}
+.faq-item.open .faq-a { max-height: 400px; }
+.faq-a-inner {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--graphite);
+  line-height: 1.75;
+  padding-bottom: 1.5rem;
+}
+
+/* ─── CTA BAND (partagé) ─────────────────────────────────── */
+.cta-band {
+  padding: 6rem 0;
+  background: var(--charbon);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255,255,255,0.015) 0px,
+    rgba(255,255,255,0.015) 1px,
+    transparent 1px,
+    transparent 80px
+  );
+  pointer-events: none;
+}
+.cta-band-label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(250,250,248,0.3);
+  margin-bottom: 1.5rem;
+}
+.cta-band-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #FAFAF8;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+.cta-band-title em {
+  font-style: normal;
+  color: var(--brique);
+}
+.cta-band-sub {
+  font-size: 17px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.65);
+  max-width: 420px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+.cta-band-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* ─── FOOTER ─────────────────────────────────────────────── */
+footer {
+  background: #0A0A0F;
+  padding: 4rem 0 2rem;
+}
+.footer-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  margin-bottom: 2rem;
+}
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #FAFAF8;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.footer-brand span { color: var(--brique); }
+.footer-desc {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  max-width: 280px;
+}
+.footer-contact-line {
+  font-size: 15px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 0.4rem;
+}
+.footer-contact-line a:hover { color: var(--brique); }
+.footer-col-title {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 1rem;
+}
+.footer-col-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-col-links a {
+  font-size: 16px;
+  color: rgba(255,255,255,0.65);
+  transition: color 0.2s;
+}
+.footer-col-links a:hover { color: #FAFAF8; }
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.footer-copy {
+  font-size: 13px;
+  color: rgba(250,250,248,0.2);
+  letter-spacing: 0.02em;
+}
+.footer-socials { display: flex; gap: 1rem; }
+.footer-socials a {
+  font-size: 13px;
+  color: rgba(250,250,248,0.3);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.footer-socials a:hover { color: #FAFAF8; }
+
+/* ─── RESPONSIVE GLOBAL ──────────────────────────────────── */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .nav-burger { display: flex; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 580px) {
+  .footer-top { grid-template-columns: 1fr; }
+  .container { padding: 0 1.25rem; }
+}
+
+/* ─── JAVASCRIPT HELPERS ─────────────────────────────────── */
+/*
+  Les scripts communs (toggleMenu, toggleFaq, scrollReveal)
+  sont dans scripts.js — à charger en bas de chaque page.
+*/
+
+    /* ═══ CSS SPÉCIFIQUE HOME ═══ */
+    /* ─── HERO ───────────────────────────────────────────── */
     .hero {
-      padding-top: calc(var(--nav-h) + 4rem);
-      padding-bottom: 4rem;
-      background: var(--charbon);
+      padding-top: calc(var(--nav-h) + 5rem);
+      padding-bottom: 5rem;
+      background: var(--papier);
       position: relative;
       overflow: hidden;
     }
-    .hero::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 80px); pointer-events: none; }
-    .hero-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem; position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-    .hero-eyebrow { display: flex; align-items: center; gap: 10px; font-family: var(--font-body); font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 1.25rem; }
-    .hero-eyebrow-dot { width: 6px; height: 6px; background: var(--brique); border-radius: 50%; flex-shrink: 0; }
-    .hero-title { font-size: clamp(28px, 4vw, 48px); color: #FAFAF8; line-height: 1.1; margin-bottom: 1rem; }
-    .hero-sub { font-size: 15px; font-weight: 300; color: rgba(255,255,255,0.65); line-height: 1.75; }
-    .hero-cats { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .hero-cat {
-      font-family: var(--font-body);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      color: rgba(255,255,255,0.55);
-      border: 1px solid rgba(255,255,255,0.12);
-      padding: 5px 12px;
-      border-radius: 2px;
-      cursor: pointer;
-      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: var(--nav-h);
+      right: 0;
+      width: 42%;
+      height: 100%;
+      background: var(--charbon);
+      clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
     }
-    .hero-cat:hover, .hero-cat.active { color: #FAFAF8; border-color: var(--brique); background: rgba(212,69,26,0.1); }
+    .hero-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--graphite-light);
+      margin-bottom: 1.5rem;
+    }
+    .hero-eyebrow-dot {
+      width: 7px; height: 7px;
+      background: var(--brique);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .hero-title {
+      font-size: clamp(32px, 4.5vw, 54px);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    .hero-title-light {
+      font-weight: 400;
+      color: var(--graphite-light);
+      display: block;
+      font-size: 0.78em;
+      letter-spacing: 0em;
+      margin-top: 0.15em;
+    }
+    .hero-body {
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--graphite);
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+      max-width: 440px;
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .hero-panel {
+      position: relative;
+      padding: 0;
+      background: var(--charbon);
+    }
+    .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    .hero-stat {
+      padding: 1.75rem 1.5rem;
+      border: 0.5px solid rgba(255,255,255,0.08);
+    }
+    .hero-stat-num {
+      font-family: var(--font-display);
+      font-size: 38px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.03em;
+    }
+    .hero-stat-num span { color: var(--brique); }
+    .hero-stat-label {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.4;
+      letter-spacing: 0.02em;
+    }
 
-    /* GRILLE ARTICLES */
-    .blog-section { padding: 5rem 0 7rem; background: var(--papier); }
-    .blog-grid {
+    /* ─── LOGOS CLIENTS ──────────────────────────────────── */
+    .clients-logos {
+      padding: 4rem 0;
+      background: var(--papier);
+      border-bottom: 1px solid var(--brume);
+    }
+    .clients-label {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--graphite-light);
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 0;
+      background: var(--brume);
+      border: 1px solid var(--brume);
+    }
+    .client-logo {
+      background: var(--papier);
+      padding: 1.5rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid var(--brume);
+      border-bottom: 1px solid var(--brume);
+      transition: background 0.2s;
+    }
+    .client-logo:hover { background: var(--brume-pale); }
+    .client-logo img {
+      max-height: 44px;
+      max-width: 100%;
+      width: auto;
+      object-fit: contain;
+      filter: grayscale(100%) opacity(0.55);
+      transition: filter 0.2s;
+    }
+    .client-logo:hover img { filter: grayscale(0%) opacity(1); }
+
+    /* ─── EXPERTISES ─────────────────────────────────────── */
+    .expertises { padding: 7rem 0; background: var(--papier); }
+    .expertises-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: var(--brume);
+      gap: 0;
+      border: 1px solid var(--brume);
     }
-
-    /* ARTICLE CARD */
-    .article-card {
-      background: var(--papier);
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-      transition: background 0.2s;
+    .expertise-card {
+      padding: 2.5rem 2rem 2rem;
+      border-right: 1px solid var(--brume);
       position: relative;
       overflow: hidden;
+      transition: background 0.25s;
     }
-    .article-card:hover { background: var(--brume-pale); }
-    .article-card::before {
+    .expertise-card:last-child { border-right: none; }
+    .expertise-card::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0;
-      height: 2px;
+      height: 3px;
       background: var(--brique);
       transform: scaleX(0);
       transform-origin: left;
       transition: transform 0.35s cubic-bezier(0.22,1,0.36,1);
     }
-    .article-card:hover::before { transform: scaleX(1); }
-
-    /* Card featured (1ère) */
-    .article-card--featured {
-      grid-column: 1 / 3;
-      flex-direction: row;
-    }
-    .article-card--featured .article-card-img { flex: 0 0 45%; height: auto; }
-    .article-card--featured .article-card-img img { height: 100%; }
-    .article-card--featured .article-card-body { flex: 1; }
-
-    .article-card-img {
-      width: 100%;
-      height: 200px;
-      overflow: hidden;
-      background: var(--charbon);
-      flex-shrink: 0;
-    }
-    .article-card-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.4s ease;
-      opacity: 0.85;
-    }
-    .article-card:hover .article-card-img img { transform: scale(1.04); opacity: 1; }
-
-    .article-card-body { padding: 1.75rem; display: flex; flex-direction: column; flex: 1; }
-    .article-card-meta {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 0.75rem;
-    }
-    .article-card-cat {
-      font-family: var(--font-body);
-      font-size: 10px;
-      font-weight: 500;
+    .expertise-card:hover { background: var(--brume-pale); }
+    .expertise-card:hover::before { transform: scaleX(1); }
+    .expertise-num {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
       letter-spacing: 0.12em;
-      text-transform: uppercase;
       color: var(--brique);
-    }
-    .article-card-date {
-      font-size: 12px;
-      color: var(--graphite-light);
-    }
-    .article-card-title {
-      font-size: 17px;
-      line-height: 1.3;
-      margin-bottom: 0.75rem;
-      color: var(--charbon);
-    }
-    .article-card--featured .article-card-title { font-size: 22px; }
-    .article-card-excerpt {
-      font-size: 14px;
-      font-weight: 300;
-      color: var(--graphite);
-      line-height: 1.65;
-      flex: 1;
       margin-bottom: 1.25rem;
     }
-    .article-card-link {
+    .expertise-title {
+      font-size: 19px;
+      margin-bottom: 1rem;
+    }
+    .expertise-body {
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--graphite);
+      line-height: 1.7;
+      margin-bottom: 1.75rem;
+    }
+    .expertise-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 11px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--brique);
+      transition: gap 0.2s;
+    }
+    .expertise-card:hover .expertise-link { gap: 10px; }
+
+    /* ─── MANIFESTE ──────────────────────────────────────── */
+    .manifeste {
+      padding: 7rem 0;
+      background: var(--charbon);
+      position: relative;
+      overflow: hidden;
+    }
+    .manifeste::before {
+      content: '"';
+      position: absolute;
+      top: -0.2em; left: -0.05em;
+      font-family: var(--font-display);
+      font-size: clamp(160px, 20vw, 280px);
+      font-weight: 800;
+      color: rgba(212,69,26,0.06);
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+    .manifeste-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .manifeste-year { display: none; }
+    .manifeste-tag  { display: none; }
+    .manifeste-founders { margin-top: 2.5rem; }
+    .founder-item {
+      padding: 1rem 0;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .founder-name {
+      font-size: 16px;
+      color: #FAFAF8;
+      margin-bottom: 0.2rem;
+    }
+    .founder-role {
+      font-size: 13px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 0.04em;
+    }
+    .manifeste-quote {
+      font-size: clamp(22px, 3vw, 34px);
+      color: #FAFAF8;
+      line-height: 1.25;
+      margin-bottom: 2.5rem;
+    }
+    .manifeste-quote em { font-style: normal; color: var(--brique); }
+    .manifeste-body {
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    .manifeste-body strong { color: rgba(255,255,255,0.95); font-weight: 500; }
+
+    /* ─── RÉALISATIONS ───────────────────────────────────── */
+    .realisations { padding: 7rem 0; background: var(--papier); }
+    .realisations-header {
+      margin-bottom: 3.5rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .realisations-title { font-size: clamp(28px, 3.5vw, 42px); line-height: 1.1; }
+    .realisations-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--brume);
+    }
+    .real-card {
+      background: var(--papier);
+      padding: 2.25rem 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .real-card--featured { grid-column: 1 / 3; background: var(--charbon); }
+    .real-card:not(.real-card--featured):hover { background: var(--brume-pale); }
+    .real-tag {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--brique);
+      margin-bottom: 1rem;
+    }
+    .real-card--featured .real-tag { color: rgba(212,69,26,0.9); }
+    .real-title { font-size: 20px; line-height: 1.2; margin-bottom: 0.75rem; }
+    .real-card--featured .real-title { color: #FAFAF8; font-size: 26px; }
+    .real-metric {
+      font-family: var(--font-display);
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--brique);
+      letter-spacing: -0.04em;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .real-body { font-size: 15px; color: var(--graphite); line-height: 1.65; flex: 1; margin-bottom: 1.25rem; }
+    .real-card--featured .real-body { color: rgba(250,250,248,0.6); }
+    .real-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
       font-weight: 500;
       letter-spacing: 0.06em;
       text-transform: uppercase;
@@ -206,43 +1037,97 @@
       margin-top: auto;
       transition: gap 0.2s;
     }
-    .article-card:hover .article-card-link { gap: 10px; }
+    .real-card:hover .real-link { gap: 10px; }
 
-    /* PLACEHOLDER — articles à venir */
-    .blog-placeholder {
-      padding: 4rem 2rem;
+    /* ─── AIO STRIP ──────────────────────────────────────── */
+    .aio-strip {
+      padding: 5.5rem 0;
       background: var(--brume-pale);
-      border: 1px dashed var(--brume);
-      text-align: center;
-      grid-column: 1 / -1;
+      border-top: 1px solid var(--brume);
+      border-bottom: 1px solid var(--brume);
     }
-    .blog-placeholder-title { font-size: 18px; margin-bottom: 0.75rem; color: var(--graphite-light); }
-    .blog-placeholder-body { font-size: 14px; font-weight: 300; color: var(--graphite-light); }
+    .aio-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .aio-left-label {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--graphite-light);
+      margin-bottom: 1rem;
+    }
+    .aio-title { font-size: clamp(24px, 3vw, 36px); line-height: 1.15; margin-bottom: 1.25rem; }
+    .aio-title em { font-style: normal; color: var(--brique); }
+    .aio-body { font-size: 17px; font-weight: 300; color: var(--graphite); line-height: 1.75; margin-bottom: 2rem; }
+    .aio-pillars { display: flex; flex-direction: column; }
+    .aio-pillar {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 1.25rem;
+      align-items: start;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--brume);
+    }
+    .aio-pillar:last-child { border-bottom: none; }
+    .aio-pillar-abbr {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--brique);
+      padding-top: 3px;
+    }
+    .aio-pillar-title { font-size: 16px; margin-bottom: 0.3rem; }
+    .aio-pillar-body { font-size: 15px; color: var(--graphite); line-height: 1.6; }
 
-    /* RESPONSIVE */
+    /* ─── FAQ HOME ───────────────────────────────────────── */
+    .faq-preview { padding: 7rem 0; background: var(--papier); }
+    .faq-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 5rem; align-items: start; }
+    .faq-left-title {
+      font-size: clamp(24px, 3vw, 36px);
+      position: sticky;
+      top: calc(var(--nav-h) + 2rem);
+    }
+
+    /* ─── RESPONSIVE PAGE ────────────────────────────────── */
     @media (max-width: 900px) {
-      .nav-links { display: none; }
-      .nav-burger { display: flex; }
-      .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
-      .blog-grid { grid-template-columns: 1fr 1fr; }
-      .article-card--featured { grid-column: 1 / -1; flex-direction: column; }
-      .article-card--featured .article-card-img { flex: none; height: 240px; width: 100%; }
-      .footer-top { grid-template-columns: 1fr 1fr; }
+      .clients-grid { grid-template-columns: repeat(4, 1fr); }
+      .hero::before { display: none; }
+      .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .hero-panel { padding: 0; }
+      .hero-stats { background: var(--charbon); grid-template-columns: repeat(2, 1fr); }
+      .expertises-grid { grid-template-columns: 1fr; }
+      .expertise-card { border-right: none; border-bottom: 1px solid var(--brume); }
+      .expertise-card:last-child { border-bottom: none; }
+      .manifeste-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .aio-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .faq-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .faq-left-title { position: static; }
+      .realisations-grid { grid-template-columns: 1fr; }
+      .real-card--featured { grid-column: 1; }
+      .realisations-header { flex-direction: column; align-items: flex-start; }
     }
     @media (max-width: 580px) {
-      .blog-grid { grid-template-columns: 1fr; }
-      .article-card--featured { grid-column: 1; }
-      .footer-top { grid-template-columns: 1fr; }
-      .container { padding: 0 1.25rem; }
+      .clients-grid { grid-template-columns: repeat(3, 1fr); }
+      .hero { padding-top: calc(var(--nav-h) + 3rem); padding-bottom: 3rem; }
+      .hero-stats { grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
 <body>
 
-<!-- NAV -->
+<!-- ─── NAVIGATION ─────────────────────────────────────── -->
 <nav class="nav" role="navigation" aria-label="Navigation principale">
   <div class="nav-inner">
-    <a href="../index.html" class="nav-logo-link">
+    <a href="index.html" class="nav-logo-link">
       <svg width="140" height="58" viewBox="0 0 280 116" xmlns="http://www.w3.org/2000/svg" aria-label="Media Impact — Accueil">
         <circle cx="140" cy="50" r="44" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.8"/>
         <line x1="0" y1="50" x2="88" y2="50" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"/>
@@ -257,12 +1142,13 @@
       </svg>
     </a>
     <ul class="nav-links" role="list">
-      <li><a href="../expertises.html">Expertises</a></li>
-      <li><a href="../reputation.html">Intelligence de Réputation</a></li>
-      <li><a href="../ecosysteme.html">Écosystème</a></li>
-      <li><a href="../realisations.html">Réalisations</a></li>
-      <li><a href="../faq.html">FAQ</a></li>
-      <li><a href="../contact.html" class="nav-cta">Nous contacter</a></li>
+      <li><a href="expertises.html">Expertises</a></li>
+      <li><a href="crise.html">Crise</a></li>
+      <li><a href="media-training.html">Media Training</a></li>
+      <li><a href="reputation.html">Réputation</a></li>
+      <li><a href="realisations.html">Réalisations</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="contact.html" class="nav-cta">Nous contacter</a></li>
     </ul>
     <button class="nav-burger" aria-label="Menu" aria-expanded="false" onclick="toggleMenu(this)">
       <span></span><span></span><span></span>
@@ -270,201 +1156,393 @@
   </div>
 </nav>
 
+<!-- Mobile nav -->
 <nav class="nav-mobile" id="nav-mobile" aria-label="Navigation mobile">
-  <a href="../expertises.html">Expertises</a>
-  <a href="../reputation.html">Intelligence de Réputation</a>
-  <a href="../ecosysteme.html">Écosystème</a>
-  <a href="../realisations.html">Réalisations</a>
-  <a href="../faq.html">FAQ</a>
-  <a href="../contact.html" class="nav-cta-mobile">Nous contacter</a>
+  <a href="expertises.html">Expertises</a>
+  <a href="crise.html">Communication de Crise</a>
+  <a href="media-training.html">Media Training</a>
+  <a href="reputation.html">Intelligence de Réputation</a>
+  <a href="realisations.html">Réalisations</a>
+  <a href="blog/index.html">Blog</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html" class="nav-cta-mobile">Nous contacter</a>
 </nav>
 
+<!-- ─── HERO ───────────────────────────────────────────── -->
 <main>
-
-<!-- HERO -->
-<section class="hero" aria-labelledby="blog-title">
+<section class="hero" aria-labelledby="hero-title">
   <div class="hero-inner">
-    <div>
-      <div class="hero-eyebrow">
+    <div class="hero-left">
+      <div class="hero-eyebrow reveal reveal-1">
         <span class="hero-eyebrow-dot" aria-hidden="true"></span>
-        Blog & actualités
+        Agence RP &amp; Intelligence de Réputation
       </div>
-      <h1 class="hero-title" id="blog-title">L'actualité des opérations<br>et des événements couverts</h1>
-      <p class="hero-sub">Communiqués de presse, retours de terrain, media trips, campagnes — la vie de Media Impact en temps réel.</p>
+      <h1 class="hero-title reveal reveal-2" id="hero-title">
+        L'expérience journalistique
+        <span class="hero-title-light">au service de l'influence algorithmique</span>
+      </h1>
+      <p class="hero-body reveal reveal-3">
+        Depuis plus de trois décennies, Media Impact structure et projette la réputation de ses clients dans l'espace public — des médias traditionnels aux systèmes d'intelligence artificielle qui façonnent aujourd'hui l'accès à l'information.
+      </p>
+      <div class="hero-actions reveal reveal-4">
+        <a href="contact.html" class="btn-primary">Nous contacter</a>
+        <a href="realisations.html" class="btn-secondary">
+          Voir nos réalisations
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-panel reveal reveal-3" aria-label="Chiffres clés">
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">35<span>+</span></div>
+          <div class="hero-stat-label">années d'expérience<br>en relations publiques</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">2<span>Md</span></div>
+          <div class="hero-stat-label">de vues broadcast<br>Illumination Valais</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">1000<span>+</span></div>
+          <div class="hero-stat-label">retombées presse<br>sur 8 ans (Greenmotion)</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">20<span>ans</span></div>
+          <div class="hero-stat-label">avec Breitling &amp;<br>Solar Impulse</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── LOGOS CLIENTS ──────────────────────────────────── -->
+<section class="clients-logos" aria-label="Ils nous font confiance">
+  <div class="container">
+    <div class="clients-label">Ils nous font confiance</div>
+    <div class="clients-grid">
+      <div class="client-logo"><img src="img/logos/breitling.jpg" alt="Breitling"></div>
+      <div class="client-logo"><img src="img/logos/omega.png" alt="Omega"></div>
+      <div class="client-logo"><img src="img/logos/jetman.png" alt="Yves Rossy — Jetman"></div>
+      <div class="client-logo"><img src="img/logos/aerovolt.png" alt="Aerovolt"></div>
+      <div class="client-logo"><img src="img/logos/hec.png" alt="HEC Lausanne — UNIL"></div>
+      <div class="client-logo"><img src="img/logos/inventions.png" alt="Salon des Inventions de Genève"></div>
+      <div class="client-logo"><img src="img/logos/smn.png" alt="Swiss Medical Network"></div>
+      <div class="client-logo"><img src="img/logos/tradition.png" alt="Compagnie Financière Tradition"></div>
+      <div class="client-logo"><img src="img/logos/wista.jpg" alt="WISTA Switzerland"></div>
+      <div class="client-logo"><img src="img/logos/koenig-bauer.jpeg" alt="Koenig &amp; Bauer"></div>
+      <div class="client-logo"><img src="img/logos/aquaparc.png" alt="Aquaparc"></div>
+      <div class="client-logo"><img src="img/logos/evolene.png" alt="Évolène Région"></div>
+      <div class="client-logo"><img src="img/logos/swiss-voice.jpeg" alt="Swiss Voice Tour"></div>
+      <div class="client-logo"><img src="img/logos/webcaution.png" alt="WebCaution"></div>
+      <div class="client-logo"><img src="img/logos/cousu-mouche.jpg" alt="Éditions Cousu Mouche"></div>
+      <div class="client-logo"><img src="img/logos/thierry-devaux.jpg" alt="Thierry Devaux"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPERTISES ─────────────────────────────────────── -->
+<section class="expertises" aria-labelledby="expertises-title">
+  <div class="container">
+    <div class="section-label">Nos expertises</div>
+    <div class="expertises-grid">
+      <article class="expertise-card">
+        <div class="expertise-num">01</div>
+        <h2 class="expertise-title" id="expertises-title">Relations Médias &amp; Attaché de presse</h2>
+        <p class="expertise-body">Construction et activation de relations durables avec les journalistes, en Suisse et à l'international. Angles éditoriaux, gestion d'exclusivités, retombées qualitatives.</p>
+        <a href="expertises.html" class="expertise-link">
+          En savoir plus
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+            <path d="M1.5 6.5h10M7.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
+      <article class="expertise-card">
+        <div class="expertise-num">02</div>
+        <h2 class="expertise-title">Communication de Crise &amp; Litige</h2>
+        <p class="expertise-body">Crisis Control Framework™ — méthodologie propriétaire en 4 phases&nbsp;: Anticipate, Structure, Control, Stabilize. Interface droit &amp; communication sous pression.</p>
+        <a href="crise.html" class="expertise-link">
+          En savoir plus
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+            <path d="M1.5 6.5h10M7.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
+      <article class="expertise-card">
+        <div class="expertise-num">03</div>
+        <h2 class="expertise-title">Intelligence de Réputation (AIO/VSEO)</h2>
+        <p class="expertise-body">Maîtriser ce que les algorithmes et les IA retiennent de vous. Audit de réputation IA, autorité sémantique, visibilité dans les environnements génératifs.</p>
+        <a href="reputation.html" class="expertise-link">
+          En savoir plus
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+            <path d="M1.5 6.5h10M7.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MANIFESTE ──────────────────────────────────────── -->
+<section class="manifeste" aria-labelledby="manifeste-title">
+  <div class="manifeste-inner">
+    <div class="manifeste-aside">
+      <div class="manifeste-year" aria-hidden="true">1990</div>
+      <div class="manifeste-tag">Fondée à Genève</div>
+      <div style="width:100%;overflow:hidden;margin-bottom:1.5rem;">
+      <img src="img/journals.avif" alt="Presse et journaux — héritage journalistique de Media Impact" loading="eager" style="width:100%;height:180px;object-fit:cover;opacity:0.75;" onerror="this.style.display='none'">
+    </div>
+    <div class="manifeste-founders">
+        <div class="founder-item">
+          <div class="founder-name">Gérard Sermier</div>
+          <div class="founder-role">Associé fondateur — Breitling Orbiter, Solar Impulse</div>
+        </div>
+        <div class="founder-item">
+          <div class="founder-name">Rohan Sant</div>
+          <div class="founder-role">Associé fondateur — L'Agefi, UBP, allnews.ch</div>
+        </div>
+      </div>
     </div>
     <div>
-      <div class="hero-cats" role="list" aria-label="Catégories">
-        <span class="hero-cat active" role="listitem">Tous</span>
-        <span class="hero-cat" role="listitem">Relations médias</span>
-        <span class="hero-cat" role="listitem">Événements sportifs</span>
-        <span class="hero-cat" role="listitem">Aviation</span>
-        <span class="hero-cat" role="listitem">Culture</span>
-        <span class="hero-cat" role="listitem">Économie</span>
-        <span class="hero-cat" role="listitem">Communiqués</span>
-        <span class="hero-cat" role="listitem">Media trip</span>
-      </div>
+      <h2 class="manifeste-quote" id="manifeste-title">
+        Là où d'autres diffusent,<br>nous <em>orchestrons.</em><br>Là où certains publient,<br>nous <em>positionnons.</em>
+      </h2>
+      <p class="manifeste-body">
+        Fondée sur un puissant réseau journalistique, Media Impact incarne une <strong>nouvelle génération d'agences RP</strong> : une structure capable de relier l'exigence éditoriale traditionnelle aux dynamiques contemporaines de visibilité digitale et d'influence algorithmique.
+      </p>
+      <p class="manifeste-body">
+        Nous analysons, structurons et amplifions les messages. Notre approche repose sur une compréhension fine des <strong>écosystèmes médiatiques</strong>, enrichie par une maîtrise avancée des logiques de diffusion actuelles&nbsp;: SEO, intelligence artificielle, data narrative et réputation digitale.
+      </p>
+      <a href="biographies.html" class="btn-secondary" style="color:rgba(255,255,255,0.65);border-color:rgba(255,255,255,0.2);">
+        Les parcours des associés
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ARTICLES -->
-<section class="blog-section">
+<!-- ─── RÉALISATIONS ───────────────────────────────────── -->
+<section class="realisations" aria-labelledby="realisations-title">
   <div class="container">
-
-    <div class="blog-grid">
-
-      <!-- ARTICLE FEATURED — Breitling Orbiter 25 ans -->
-      <a href="breitling-orbiter-25-ans.html" class="article-card article-card--featured">
-        <div class="article-card-img">
-          <img src="https://static.wixstatic.com/media/4e443a_0cb0f81efd6d4f7ba57c01a6e7b0174a~mv2.jpg"
-               alt="Breitling Orbiter 3 — 25 ans après le premier tour du monde en ballon sans escale"
-               loading="eager">
-        </div>
-        <div class="article-card-body">
-          <div class="article-card-meta">
-            <span class="article-card-cat">Aviation</span>
-            <span class="article-card-date">Mars 2024</span>
-          </div>
-          <h2 class="article-card-title">Il y a 25 ans, heure pour heure, Breitling Orbiter 3 franchissait les Alpes</h2>
-          <p class="article-card-excerpt">Le 1er mars 1999, le ballon Breitling Orbiter 3 décollait de Château-d'Oex avec Bertrand Piccard et Brian Jones à son bord. 19 jours plus tard, ils réalisaient le premier tour du monde en ballon sans escale. Media Impact était là.</p>
-          <span class="article-card-link">
-            Lire l'article
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-        </div>
+    <div class="realisations-header">
+      <h2 class="realisations-title" id="realisations-title">
+        Réalisations &amp;<br>success stories
+      </h2>
+      <a href="realisations.html" class="btn-secondary">
+        Toutes nos réalisations
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </a>
-
-      <!-- ARTICLE 2 — Grand Raid -->
-      <a href="grand-raid-2024.html" class="article-card">
-        <div class="article-card-img" style="background:var(--charbon);">
-          <img src="../img/grand-raid-hero.jpg" alt="Grand Raid BCVs 2024" loading="lazy"
-               onerror="this.parentElement.style.minHeight='200px'">
-        </div>
-        <div class="article-card-body">
-          <div class="article-card-meta">
-            <span class="article-card-cat">Événements sportifs</span>
-            <span class="article-card-date">Août 2024</span>
-          </div>
-          <h2 class="article-card-title">Grand Raid BCVs 2024</h2>
-          <p class="article-card-excerpt">Retour sur l'édition 2024 du Grand Raid Verbier–Grimentz — dispositif presse, accréditations et couverture internationale.</p>
-          <span class="article-card-link">Lire <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
-      </a>
-
-      <!-- ARTICLE 3 — VALLEYPASS -->
-      <a href="valleypass.html" class="article-card">
-        <div class="article-card-img" style="background:var(--brume-pale);display:flex;align-items:center;justify-content:center;">
-          <img src="../img/logos/aquaparc.png" alt="VALLEYPASS" loading="lazy" style="height:70px;width:auto;object-fit:contain;">
-        </div>
-        <div class="article-card-body">
-          <div class="article-card-meta">
-            <span class="article-card-cat">Relations médias</span>
-            <span class="article-card-date">2024</span>
-          </div>
-          <h2 class="article-card-title">VALLEYPASS : l'accès avantageux à 12 attractions majeures</h2>
-          <p class="article-card-excerpt">Lancement du pass multi-attractions qui réunit les plus belles expériences de la région — Media Impact au cœur de la stratégie de communication.</p>
-          <span class="article-card-link">Lire <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
-      </a>
-
-      <!-- ARTICLE 4 — Smeetz -->
-      <a href="smeetz-generalmedia.html" class="article-card">
-        <div class="article-card-img" style="background:var(--charbon);display:flex;align-items:center;justify-content:center;">
-          <span style="font-family:'Syne',sans-serif;font-size:28px;font-weight:800;color:#FAFAF8;letter-spacing:-0.02em;">Smeetz</span>
-        </div>
-        <div class="article-card-body">
-          <div class="article-card-meta">
-            <span class="article-card-cat">Économie</span>
-            <span class="article-card-date">2024</span>
-          </div>
-          <h2 class="article-card-title">Smeetz et GeneralMedia réinventent la billetterie des loisirs en Suisse</h2>
-          <p class="article-card-excerpt">Une nouvelle approche de la billetterie digitale pour les acteurs du loisir — Media Impact accompagne le lancement médiatique.</p>
-          <span class="article-card-link">Lire <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
-      </a>
-
-      <!-- ARTICLE 5 — K&B -->
-      <a href="koenig-bauer.html" class="article-card">
-        <div class="article-card-img" style="background:var(--brume-pale);display:flex;align-items:center;justify-content:center;">
-          <img src="../img/logos/koenig-bauer.jpeg" alt="Koenig & Bauer" loading="lazy" style="height:50px;width:auto;object-fit:contain;">
-        </div>
-        <div class="article-card-body">
-          <div class="article-card-meta">
-            <span class="article-card-cat">Culture</span>
-            <span class="article-card-date">2024</span>
-          </div>
-          <h2 class="article-card-title">K&B&nbsp;: un trésor caché lausannois révélé</h2>
-          <p class="article-card-excerpt">Découverte d'un lieu d'exception à Lausanne — Media Impact orchestre la mise en lumière médiatique de cet espace unique.</p>
-          <span class="article-card-link">Lire <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
-      </a>
-
-      <!-- ARTICLE 6 — Évolène -->
-      <a href="evolene-carnaval.html" class="article-card">
-        <div class="article-card-img" style="background:var(--brume-pale);display:flex;align-items:center;justify-content:center;">
-          <img src="../img/logos/evolene.png" alt="Évolène Région" loading="lazy" style="height:70px;width:auto;object-fit:contain;">
-        </div>
-        <div class="article-card-body">
-          <div class="article-card-meta">
-            <span class="article-card-cat">Culture</span>
-            <span class="article-card-date">2024</span>
-          </div>
-          <h2 class="article-card-title">Le Carnaval à Évolène, c'est magique</h2>
-          <p class="article-card-excerpt">Retour sur l'une des traditions carnavalesques les plus authentiques des Alpes valaisannes — couverture médiatique et media trip.</p>
-          <span class="article-card-link">Lire <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
-      </a>
-
-      <!-- ARTICLE 7 — Festival Haudères -->
-      <a href="festival-hauderes.html" class="article-card">
-        <div class="article-card-img" style="background:var(--charbon);display:flex;align-items:center;justify-content:center;">
-          <span style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:#FAFAF8;text-align:center;padding:1rem;">Festival Classique<br>des Haudères</span>
-        </div>
-        <div class="article-card-body">
-          <div class="article-card-meta">
-            <span class="article-card-cat">Culture</span>
-            <span class="article-card-date">2024</span>
-          </div>
-          <h2 class="article-card-title">23e Festival Classique des Haudères&nbsp;: une programmation éclectique de haut vol</h2>
-          <p class="article-card-excerpt">Le festival de musique classique au cœur du Val d'Hérens — Media Impact accompagne la communication de cette édition anniversaire.</p>
-          <span class="article-card-link">Lire <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
-      </a>
-
-      <!-- ARTICLE 8 — Héli-Alps -->
-      <a href="heli-alps.html" class="article-card">
-        <div class="article-card-img" style="background:var(--charbon);display:flex;align-items:center;justify-content:center;">
-          <span style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--brique);text-align:center;padding:1rem;">Héli-Alps<br><span style="font-size:13px;color:rgba(255,255,255,0.6);font-weight:400;">20 ans</span></span>
-        </div>
-        <div class="article-card-body">
-          <div class="article-card-meta">
-            <span class="article-card-cat">Aviation</span>
-            <span class="article-card-date">2024</span>
-          </div>
-          <h2 class="article-card-title">Héli-Alps célèbre son 20e anniversaire et invite le public</h2>
-          <p class="article-card-excerpt">Vingt ans de vols de montagne en Suisse — Media Impact au cœur de la communication de cet anniversaire exceptionnel.</p>
-          <span class="article-card-link">Lire <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
-      </a>
-
-      <!-- PLACEHOLDER — prochains articles -->
-      <div class="blog-placeholder">
-        <h3 class="blog-placeholder-title">D'autres articles arrivent bientôt</h3>
-        <p class="blog-placeholder-body">Suivez l'actualité de Media Impact sur LinkedIn et Facebook.</p>
-      </div>
-
+    </div>
+    <div class="realisations-grid">
+      <article class="real-card real-card--featured">
+        <div class="real-tag">Aéronautique — 20 ans de collaboration</div>
+        <h3 class="real-title">Breitling Orbiter &amp; Solar Impulse</h3>
+        <div class="real-metric">20</div>
+        <p class="real-body">Années de couverture médiatique mondiale, du premier tour du monde en ballon sans escale (Piccard &amp; Jones, 1999) aux premières étapes de Solar Impulse — chaque exploit transformé en capital réputationnel durable.</p>
+        <a href="breitling.html" class="real-link">
+          Voir la success story
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
+      <article class="real-card">
+        <div class="real-tag">Territoire</div>
+        <h3 class="real-title">Illumination des sommets valaisans</h3>
+        <div class="real-metric" style="font-size:32px;">2 Md</div>
+        <p class="real-body">Vues broadcast. Opération pyrotechnique sans filet digital — preuve qu'une image radicale suffit à générer une viralité mondiale.</p>
+        <a href="valais.html" class="real-link">
+          Lire
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
+      <article class="real-card">
+        <div class="real-tag">Horlogerie</div>
+        <h3 class="real-title">Omega — La précision en mouvement</h3>
+        <p class="real-body">Jeep lunaire sur la rade de Genève, Nicole Kidman, golf mondial. Traduire l'ADN d'une maison de prestige en expériences réelles et médiatiquement puissantes.</p>
+        <a href="omega.html" class="real-link">
+          Lire
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
+      <article class="real-card">
+        <div class="real-tag">Innovation — 30 ans</div>
+        <h3 class="real-title">Salon international des Inventions</h3>
+        <p class="real-body">20 ans de pilotage des relations presse internationales. Des milliers de retombées mondiales pour la plateforme de référence de l'innovation appliquée.</p>
+        <a href="inventions.html" class="real-link">
+          Lire
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
+      <article class="real-card">
+        <div class="real-tag">Sport — 19 ans</div>
+        <h3 class="real-title">Grand Raid BCVs</h3>
+        <p class="real-body">125 km, 5 000 m de dénivelé, gestion des dispositifs hélicoptères médias. 19 ans au sommet de la communication d'endurance.</p>
+        <a href="grand-raid.html" class="real-link">
+          Lire
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M1.5 6h9M6.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
     </div>
   </div>
 </section>
 
+<!-- ─── AIO STRIP ──────────────────────────────────────── -->
+<section class="aio-strip" aria-labelledby="aio-title">
+  <div class="aio-inner">
+    <div>
+      <div style="width:100%;overflow:hidden;margin-bottom:1.5rem;border-radius:2px;">
+      <img src="img/lightbulb.avif" alt="Intelligence artificielle et réputation — Media Impact AIO VSEO" loading="lazy" style="width:100%;height:180px;object-fit:contain;object-position:center;mix-blend-mode:luminosity;opacity:0.85;background:var(--charbon);">
+    </div>
+    <div class="aio-left-label">Nouveau</div>
+      <h2 class="aio-title" id="aio-title">
+        La réputation se joue<br>désormais dans la <em>mémoire des IA</em>
+      </h2>
+      <p class="aio-body">
+        Les modèles d'intelligence artificielle sélectionnent, synthétisent et figent l'information. Être visible ne suffit plus — il faut être correctement interprété. Media Impact est pionnier de l'Intelligence de Réputation algorithmique.
+      </p>
+      <a href="reputation.html" class="btn-primary">Découvrir l'approche AIO/VSEO</a>
+    </div>
+    <div class="aio-pillars" aria-label="Piliers de l'Intelligence de Réputation">
+      <div class="aio-pillar">
+        <div class="aio-pillar-abbr">AUDIT</div>
+        <div>
+          <div class="aio-pillar-title">Audit de réputation IA</div>
+          <p class="aio-pillar-body">Cartographie de la manière dont les IA décrivent votre entreprise et vos dirigeants. Détection des biais, lacunes et signaux négatifs dans les systèmes génératifs.</p>
+        </div>
+      </div>
+      <div class="aio-pillar">
+        <div class="aio-pillar-abbr">VSEO</div>
+        <div>
+          <div class="aio-pillar-title">Optimisation pour les IA génératives</div>
+          <p class="aio-pillar-body">Positionner des contenus dans les environnements où les réponses sont générées, et non simplement indexées. Architecture de contenu à finalité algorithmique.</p>
+        </div>
+      </div>
+      <div class="aio-pillar">
+        <div class="aio-pillar-abbr">AUTO­RITÉ</div>
+        <div>
+          <div class="aio-pillar-title">Autorité sémantique durable</div>
+          <p class="aio-pillar-body">Produire moins, mais mieux — des contenus structurants, cohérents et répétés dans le temps, reconnus par les algorithmes comme sources de référence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ APERÇU ─────────────────────────────────────── -->
+<section class="faq-preview" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="faq-grid">
+      <div>
+        <div class="section-label">Questions fréquentes</div>
+        <h2 class="faq-left-title" id="faq-title">Les questions que nos clients nous posent</h2>
+        <p style="margin-top:1.5rem;font-size:14px;color:var(--graphite-light);line-height:1.7;">Retrouvez toutes nos réponses sur la territorialité, la compliance, l'AIO et la protection de réputation face aux intelligences artificielles.</p>
+        <a href="faq.html" class="btn-secondary" style="margin-top:1.5rem;display:inline-flex;">
+          Toutes les FAQ
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="faq-items" role="list">
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Quelle est la différence entre SEO classique et AIO?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <line x1="5" y1="1" x2="5" y2="9" stroke-width="1.2" stroke-linecap="round"/>
+                <line x1="1" y1="5" x2="9" y2="5" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-a" role="region">
+            <p class="faq-a-inner">L'AIO (Artificial Intelligence Optimization) consiste à être directement intégré dans les réponses générées par les intelligences artificielles, alors que le SEO vise à apparaître dans les résultats des moteurs de recherche. En SEO, vous êtes une option&nbsp;; en AIO, vous devenez une référence. Il s'agit de travailler l'autorité sémantique, la cohérence des contenus et la qualité des sources.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Comment protéger la réputation d'un dirigeant face aux hallucinations des IA?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <line x1="5" y1="1" x2="5" y2="9" stroke-width="1.2" stroke-linecap="round"/>
+                <line x1="1" y1="5" x2="9" y2="5" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-a" role="region">
+            <p class="faq-a-inner">Il faut adopter une stratégie proactive&nbsp;: développer des contenus structurés et crédibles, renforcer l'autorité sémantique, réaliser des audits de réputation IA réguliers et intervenir rapidement en cas de dérive. La réputation ne se joue plus seulement dans les médias, mais aussi dans la mémoire des systèmes algorithmiques.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Pourquoi la territorialité est-elle un enjeu majeur en Suisse?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <line x1="5" y1="1" x2="5" y2="9" stroke-width="1.2" stroke-linecap="round"/>
+                <line x1="1" y1="5" x2="9" y2="5" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-a" role="region">
+            <p class="faq-a-inner">Le marché suisse est fragmenté entre plusieurs langues et cultures. Une stratégie efficace en Suisse romande ne produit pas les mêmes résultats en Suisse alémanique ou au Tessin. Une agence RP suisse doit maîtriser ces spécificités&nbsp;: accès aux bons journalistes, sensibilités locales et adaptation des narratifs par région linguistique.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Comment la compliance influence-t-elle la communication de crise?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <line x1="5" y1="1" x2="5" y2="9" stroke-width="1.2" stroke-linecap="round"/>
+                <line x1="1" y1="5" x2="9" y2="5" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-a" role="region">
+            <p class="faq-a-inner">La compliance impose un cadre strict&nbsp;: chaque prise de parole doit être juridiquement validée et coordonnée avec les équipes internes. En situation de crise, les organisations doivent concilier transparence médiatique et contraintes juridiques. Une communication mal maîtrisée peut fragiliser une position légale ou exposer l'institution à des risques supplémentaires.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA FINAL ──────────────────────────────────────── -->
+<section class="cta-band" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-band-label">Prenons contact</div>
+    <h2 class="cta-band-title" id="cta-title">
+      Votre réputation est<br>un <em>actif stratégique.</em><br>Traitons-la comme tel.
+    </h2>
+    <p class="cta-band-sub">Intervention d'urgence, conseil stratégique ou audit de réputation IA — l'équipe de Media Impact est à votre disposition.</p>
+    <div class="cta-band-actions">
+      <a href="contact.html" class="btn-primary-lg">Nous contacter</a>
+      <a href="expertises.html" class="btn-ghost-lg">Découvrir nos expertises</a>
+    </div>
+  </div>
+</section>
 </main>
 
-<!-- FOOTER -->
+<!-- ─── FOOTER ─────────────────────────────────────────── -->
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <a href="../index.html">
+        <a href="index.html">
           <svg width="180" height="100" viewBox="0 0 400 224" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Media Impact">
             <circle cx="200" cy="98" r="84" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
             <line x1="0" y1="98" x2="100" y2="98" stroke="rgba(255,255,255,0.55)" stroke-width="1.8"/>
@@ -487,29 +1565,29 @@
       <div>
         <div class="footer-col-title">Réalisations</div>
         <ul class="footer-col-links" role="list">
-          <li><a href="../breitling.html">Breitling — 20 ans d'exploits aéronautiques</a></li>
-          <li><a href="../omega.html">Omega — La précision en mouvement</a></li>
-          <li><a href="../valais.html">Illumination des sommets valaisans</a></li>
-          <li><a href="../inventions.html">Salon international des Inventions</a></li>
-          <li><a href="../grand-raid.html">Grand Raid BCVs</a></li>
-          <li><a href="../greenmotion.html">Greenmotion &amp; evpass</a></li>
+          <li><a href="breitling.html">Breitling — 20 ans d'exploits aéronautiques</a></li>
+          <li><a href="omega.html">Omega — La précision en mouvement</a></li>
+          <li><a href="valais.html">Illumination des sommets valaisans</a></li>
+          <li><a href="inventions.html">Salon international des Inventions</a></li>
+          <li><a href="grand-raid.html">Grand Raid BCVs</a></li>
+          <li><a href="greenmotion.html">Greenmotion &amp; evpass</a></li>
         </ul>
       </div>
       <div>
         <div class="footer-col-title">Expertises</div>
         <ul class="footer-col-links" role="list">
-          <li><a href="../expertises.html">Relations Médias &amp; Presse</a></li>
-          <li><a href="../crise.html">Communication de Crise</a></li>
-          <li><a href="../media-training.html">Media Training</a></li>
-          <li><a href="../reputation.html">Intelligence de Réputation</a></li>
+          <li><a href="expertises.html">Relations Médias &amp; Presse</a></li>
+          <li><a href="crise.html">Communication de Crise</a></li>
+          <li><a href="media-training.html">Media Training</a></li>
+          <li><a href="reputation.html">Intelligence de Réputation</a></li>
         </ul>
         <div class="footer-col-title" style="margin-top:1.5rem;">Agence</div>
         <ul class="footer-col-links" role="list">
-          <li><a href="../biographies.html">Les parcours des associés</a></li>
-          <li><a href="../ecosysteme.html">Écosystème</a></li>
-          <li><a href="../faq.html">FAQ</a></li>
-          <li><a href="index.html">Blog</a></li>
-          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="biographies.html">Les parcours des associés</a></li>
+          <li><a href="ecosysteme.html">Écosystème</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -530,6 +1608,36 @@
     btn.classList.toggle('open', open);
     btn.setAttribute('aria-expanded', open);
   }
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+    });
+    if (!wasOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+  (function () {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.expertise-card, .real-card, .aio-pillar, .founder-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s cubic-bezier(0.22,1,0.36,1)';
+      observer.observe(el);
+    });
+  })();
 </script>
+
 </body>
 </html>
