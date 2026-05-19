@@ -296,16 +296,18 @@
       <p class="hero-sub">Communiqués de presse, retours de terrain, media trips, campagnes — la vie de Media Impact en temps réel.</p>
     </div>
     <div>
-      <div class="hero-cats" role="list" aria-label="Catégories">
-        <span class="hero-cat active" role="listitem">Tous</span>
-        <span class="hero-cat" role="listitem">Relations médias</span>
-        <span class="hero-cat" role="listitem">Événements sportifs</span>
-        <span class="hero-cat" role="listitem">Aviation</span>
-        <span class="hero-cat" role="listitem">Culture</span>
-        <span class="hero-cat" role="listitem">Économie</span>
-        <span class="hero-cat" role="listitem">Communiqués</span>
-        <span class="hero-cat" role="listitem">Media trip</span>
-      </div>
+      <nav aria-label="Articles du blog" style="display:flex;flex-direction:column;gap:0;">
+        <div style="font-family:var(--font-body);font-size:13px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--brique);margin-bottom:1rem;">Articles</div>
+        <a href="breitling-orbiter-25-ans.html" style="font-size:15px;color:rgba(255,255,255,0.7);padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s;display:flex;align-items:center;gap:8px;"><span style="color:var(--brique);font-size:11px;">→</span>Breitling Orbiter 3 — 25 ans</a>
+        <a href="koenig-bauer.html" style="font-size:15px;color:rgba(255,255,255,0.7);padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s;display:flex;align-items:center;gap:8px;"><span style="color:var(--brique);font-size:11px;">→</span>K&B : un trésor lausannois révélé</a>
+        <a href="heli-alps.html" style="font-size:15px;color:rgba(255,255,255,0.7);padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s;display:flex;align-items:center;gap:8px;"><span style="color:var(--brique);font-size:11px;">→</span>Héli-Alps — 20e anniversaire</a>
+        <a href="festival-hauderes.html" style="font-size:15px;color:rgba(255,255,255,0.7);padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s;display:flex;align-items:center;gap:8px;"><span style="color:var(--brique);font-size:11px;">→</span>Festival Classique des Haudères</a>
+        <a href="smeetz-generalmedia.html" style="font-size:15px;color:rgba(255,255,255,0.7);padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s;display:flex;align-items:center;gap:8px;"><span style="color:var(--brique);font-size:11px;">→</span>Smeetz & GeneralMedia</a>
+        <a href="grand-raid-2024.html" style="font-size:15px;color:rgba(255,255,255,0.7);padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s;display:flex;align-items:center;gap:8px;"><span style="color:var(--brique);font-size:11px;">→</span>Grand Raid BCVs 2024</a>
+        <a href="evolene-carnaval.html" style="font-size:15px;color:rgba(255,255,255,0.7);padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s;display:flex;align-items:center;gap:8px;"><span style="color:var(--brique);font-size:11px;">→</span>Le Carnaval à Évolène</a>
+        <a href="valleypass.html" style="font-size:15px;color:rgba(255,255,255,0.7);padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s;display:flex;align-items:center;gap:8px;"><span style="color:var(--brique);font-size:11px;">→</span>VALLEYPASS — 12 attractions</a>
+        <a href="retour-astana.html" style="font-size:15px;color:rgba(255,255,255,0.7);padding:0.5rem 0;transition:color 0.2s;display:flex;align-items:center;gap:8px;"><span style="color:var(--brique);font-size:11px;">→</span>Retour au Kazakhstan — Astana</a>
+      </nav>
     </div>
   </div>
 </section>
@@ -339,9 +341,8 @@
 
       <!-- ARTICLE 2 — Grand Raid -->
       <a href="grand-raid-2024.html" class="article-card">
-        <div class="article-card-img" style="background:var(--charbon);">
-          <img src="../img/grand-raid-hero.jpg" alt="Grand Raid BCVs 2024" loading="lazy"
-               onerror="this.parentElement.style.minHeight='200px'">
+        <div class="article-card-img">
+          <img src="../img/grand-raid-affiche-hero.jpg" alt="Grand Raid BCVs 2024" loading="lazy">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
@@ -356,8 +357,8 @@
 
       <!-- ARTICLE 3 — VALLEYPASS -->
       <a href="valleypass.html" class="article-card">
-        <div class="article-card-img" style="background:var(--brume-pale);display:flex;align-items:center;justify-content:center;">
-          <img src="../img/logos/aquaparc.png" alt="VALLEYPASS" loading="lazy" style="height:70px;width:auto;object-fit:contain;">
+        <div class="article-card-img" style="background:var(--charbon);display:flex;align-items:center;justify-content:center;padding:1.5rem;">
+          <img src="../img/blog/logo-valley-pass.png" alt="VALLEYPASS" loading="lazy" style="height:80px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:0.85;">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
@@ -372,8 +373,9 @@
 
       <!-- ARTICLE 4 — Smeetz -->
       <a href="smeetz-generalmedia.html" class="article-card">
-        <div class="article-card-img" style="background:var(--charbon);display:flex;align-items:center;justify-content:center;">
-          <span style="font-family:'Syne',sans-serif;font-size:28px;font-weight:800;color:#FAFAF8;letter-spacing:-0.02em;">Smeetz</span>
+        <div class="article-card-img" style="background:var(--charbon);display:flex;align-items:center;justify-content:center;gap:1.5rem;padding:1rem;">
+          <img src="../img/blog/logo-smeetz.png" alt="Smeetz" loading="lazy" style="height:36px;width:auto;filter:brightness(0) invert(1);opacity:0.85;">
+          <img src="../img/blog/logo-general-media.png" alt="GeneralMedia" loading="lazy" style="height:36px;width:auto;filter:brightness(0) invert(1);opacity:0.85;">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
@@ -388,8 +390,8 @@
 
       <!-- ARTICLE 5 — K&B -->
       <a href="koenig-bauer.html" class="article-card">
-        <div class="article-card-img" style="background:var(--brume-pale);display:flex;align-items:center;justify-content:center;">
-          <img src="../img/logos/koenig-bauer.jpeg" alt="Koenig & Bauer" loading="lazy" style="height:50px;width:auto;object-fit:contain;">
+        <div class="article-card-img" style="background:var(--charbon);display:flex;align-items:center;justify-content:center;padding:1rem;">
+          <img src="../img/logos/koenig-bauer.jpeg" alt="Koenig & Bauer" loading="lazy" style="height:60px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:0.85;">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
@@ -420,8 +422,8 @@
 
       <!-- ARTICLE 7 — Festival Haudères -->
       <a href="festival-hauderes.html" class="article-card">
-        <div class="article-card-img" style="background:var(--charbon);display:flex;align-items:center;justify-content:center;">
-          <span style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:#FAFAF8;text-align:center;padding:1rem;">Festival Classique<br>des Haudères</span>
+        <div class="article-card-img" style="background:var(--charbon);display:flex;align-items:center;justify-content:center;padding:1.5rem;">
+          <img src="../img/blog/logo-hauderes.png" alt="Festival Classique des Haudères" loading="lazy" style="height:80px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:0.85;">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
@@ -436,8 +438,8 @@
 
       <!-- ARTICLE 8 — Héli-Alps -->
       <a href="heli-alps.html" class="article-card">
-        <div class="article-card-img" style="background:var(--charbon);display:flex;align-items:center;justify-content:center;">
-          <span style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--brique);text-align:center;padding:1rem;">Héli-Alps<br><span style="font-size:13px;color:rgba(255,255,255,0.6);font-weight:400;">20 ans</span></span>
+        <div class="article-card-img">
+          <img src="../img/blog/heli-alps1.jpg" alt="Héli-Alps 20e anniversaire" loading="lazy">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
