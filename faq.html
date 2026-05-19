@@ -387,11 +387,11 @@
       <nav class="faq-sidebar" aria-label="Navigation par thème">
         <div class="faq-sidebar-title">Thèmes</div>
         <div class="faq-sidebar-links">
-          <div class="faq-sidebar-link active" onclick="scrollToGroup('suisse')">Marché suisse & Territorialité</div>
-          <div class="faq-sidebar-link" onclick="scrollToGroup('ia')">Intelligence Artificielle & AIO</div>
-          <div class="faq-sidebar-link" onclick="scrollToGroup('crise')">Communication de Crise</div>
-          <div class="faq-sidebar-link" onclick="scrollToGroup('medias')">Relations Médias</div>
-          <div class="faq-sidebar-link" onclick="scrollToGroup('training')">Media Training</div>
+          <div class="faq-sidebar-link active" onclick="scrollToGroup(event,'suisse')">Marché suisse & Territorialité</div>
+          <div class="faq-sidebar-link" onclick="scrollToGroup(event,'ia')">Intelligence Artificielle & AIO</div>
+          <div class="faq-sidebar-link" onclick="scrollToGroup(event,'crise')">Communication de Crise</div>
+          <div class="faq-sidebar-link" onclick="scrollToGroup(event,'medias')">Relations Médias</div>
+          <div class="faq-sidebar-link" onclick="scrollToGroup(event,'training')">Media Training</div>
         </div>
       </nav>
 
@@ -699,14 +699,14 @@
     }
   }
 
-  function scrollToGroup(id) {
+  function scrollToGroup(e, id) {
     const el = document.getElementById('group-' + id);
     if (el) {
       const offset = el.getBoundingClientRect().top + window.scrollY - 90;
       window.scrollTo({ top: offset, behavior: 'smooth' });
     }
     document.querySelectorAll('.faq-sidebar-link').forEach(l => l.classList.remove('active'));
-    event.target.classList.add('active');
+    e.target.classList.add('active');
   }
 </script>
 
