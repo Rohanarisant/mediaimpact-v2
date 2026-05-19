@@ -329,82 +329,53 @@
 
     <p class="article-body">La campagne que nous avons orchestrée a permis de révéler ce trésor industriel au grand public — sans trahir la culture de discrétion qui caractérise ces entreprises de précision. Le résultat&nbsp;: une couverture de Swissquote Magazine, un reportage dans Finanz und Wirtschaft, des articles dans PME Magazine, Entreprise Romande et Grand Format.</p>
 
-    <div class="press-section-title">Retombées presse — sélection</div>
+        <div class="press-section-title">Retombées presse — sélection</div>
 
-    <div class="press-moodboard">
-
-      <!-- Swissquote Cover — featured -->
-      <div class="press-item press-item--featured" onclick="openLightbox('../img/blog/kb-swissquote-cover.webp')">
+    <!-- Ligne 1 : Swissquote couverture (grande) + FuW -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:4px;">
+      <div class="press-item press-item--featured" onclick="openLightbox(0)" style="cursor:zoom-in;">
         <img src="../img/blog/kb-swissquote-cover.webp"
-             alt="Couverture Swissquote Magazine novembre 2024 — Koenig & Bauer en une"
-             loading="lazy">
+             alt="Couverture Swissquote Magazine novembre 2024" loading="lazy">
         <div class="press-badge">Swissquote Magazine — couverture</div>
       </div>
-
-      <!-- Swissquote article 1 -->
-      <div class="press-item" onclick="openLightbox('../img/blog/kb-swissquote-article1.jpg')">
-        <img src="../img/blog/kb-swissquote-article1.jpg"
-             alt="Swissquote Magazine — A banknote printing press in Lausanne, page 1"
-             loading="lazy">
-        <div class="press-badge">Swissquote — reportage p.1</div>
+      <div style="display:grid;grid-template-rows:1fr 1fr;gap:4px;">
+        <div class="press-item" onclick="openLightbox(1)" style="cursor:zoom-in;">
+          <img src="../img/blog/kb-fuw1.webp" alt="Finanz und Wirtschaft" loading="lazy" style="height:100%;object-fit:cover;">
+          <div class="press-badge">Finanz und Wirtschaft</div>
+        </div>
+        <div class="press-item" onclick="openLightbox(2)" style="cursor:zoom-in;">
+          <img src="../img/blog/kb-entreprise-romande.webp" alt="Entreprise Romande" loading="lazy" style="height:100%;object-fit:cover;">
+          <div class="press-badge">Entreprise Romande</div>
+        </div>
       </div>
+    </div>
 
-      <!-- FuW 1 -->
-      <div class="press-item" onclick="openLightbox('../img/blog/kb-fuw1.webp')">
-        <img src="../img/blog/kb-fuw1.webp"
-             alt="Finanz und Wirtschaft — Die stillen Geldmacher"
-             loading="lazy">
-        <div class="press-badge">Finanz und Wirtschaft</div>
+    <!-- Ligne 2 : 3 pages Swissquote reportage -->
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin-bottom:4px;">
+      <div class="press-item" onclick="openLightbox(3)" style="cursor:zoom-in;">
+        <img src="../img/blog/kb-swissquote-article1.jpg" alt="Swissquote reportage p.1" loading="lazy">
+        <div class="press-badge">Swissquote — p.1</div>
       </div>
-
-      <!-- Swissquote article 2 -->
-      <div class="press-item" onclick="openLightbox('../img/blog/kb-swissquote-article2.jpg')">
-        <img src="../img/blog/kb-swissquote-article2.jpg"
-             alt="Swissquote Magazine — reportage Koenig & Bauer page 2"
-             loading="lazy">
-        <div class="press-badge">Swissquote — reportage p.2</div>
+      <div class="press-item" onclick="openLightbox(4)" style="cursor:zoom-in;">
+        <img src="../img/blog/kb-swissquote-article2.jpg" alt="Swissquote reportage p.2" loading="lazy">
+        <div class="press-badge">Swissquote — p.2</div>
       </div>
+      <div class="press-item" onclick="openLightbox(5)" style="cursor:zoom-in;">
+        <img src="../img/blog/kb-swissquote-article3.jpg" alt="Swissquote reportage p.3" loading="lazy">
+        <div class="press-badge">Swissquote — p.3</div>
+      </div>
+    </div>
 
-      <!-- PME Magazine -->
-      <div class="press-item" onclick="openLightbox('../img/blog/kb-pme.webp')">
-        <img src="../img/blog/kb-pme.webp"
-             alt="PME Magazine — L'argent liquide est loin d'être en bout de course"
-             loading="lazy">
+    <!-- Ligne 3 : PME + Grand Format -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:2.5rem;">
+      <div class="press-item" onclick="openLightbox(6)" style="cursor:zoom-in;">
+        <img src="../img/blog/kb-pme.webp" alt="PME Magazine" loading="lazy">
         <div class="press-badge">PME Magazine</div>
       </div>
-
-      <!-- Swissquote article 3 -->
-      <div class="press-item" onclick="openLightbox('../img/blog/kb-swissquote-article3.jpg')">
-        <img src="../img/blog/kb-swissquote-article3.jpg"
-             alt="Swissquote Magazine — reportage Koenig & Bauer page 3"
-             loading="lazy">
-        <div class="press-badge">Swissquote — reportage p.3</div>
-      </div>
-
-      <!-- Entreprise Romande -->
-      <div class="press-item" onclick="openLightbox('../img/blog/kb-entreprise-romande.webp')">
-        <img src="../img/blog/kb-entreprise-romande.webp"
-             alt="Entreprise Romande — Moyens de paiements : très doux sont les billets"
-             loading="lazy">
-        <div class="press-badge">Entreprise Romande</div>
-      </div>
-
-      <!-- Grand Format 1 -->
-      <div class="press-item" onclick="openLightbox('../img/blog/kb-grand-format1.webp')">
-        <img src="../img/blog/kb-grand-format1.webp"
-             alt="Grand Format — Très doux sont les billets"
-             loading="lazy">
+      <div class="press-item" onclick="openLightbox(7)" style="cursor:zoom-in;">
+        <img src="../img/blog/kb-grand-format1.webp" alt="Grand Format" loading="lazy">
         <div class="press-badge">Grand Format</div>
       </div>
-
-      <!-- FuW 2 -->
-      <div class="press-item" onclick="openLightbox('../img/blog/kb-fuw2.webp')">
-        <img src="../img/blog/kb-fuw2.webp"
-             alt="Finanz und Wirtschaft — article complet"
-             loading="lazy">
-        <div class="press-badge">Finanz und Wirtschaft p.2</div>
-      </div>
-
     </div>
 
     <!-- Lightbox -->
@@ -427,11 +398,6 @@
     <p class="article-body"><strong>Koenig & Bauer</strong> — K&B pour les initiés — est l'une de ces entreprises dont personne ne connaît le nom, et pourtant dont tout le monde utilise indirectement les produits. Chaque billet de banque imprimé dans des dizaines de pays à travers le monde porte, d'une certaine façon, la marque de cet acteur discret installé à Lausanne.</p>
 
     <p class="article-body">Révéler ce trésor industriel au grand public sans trahir la culture de discrétion qui caractérise ces entreprises de précision — c'est précisément le défi que nous avons relevé avec cette campagne. Sélectionner les bons journalistes, construire les bons angles éditoriaux, créer les conditions d'une couverture qualitative dans les titres économiques de référence.</p>
-
-      <div class="article-credit-item"><strong>Bertrand Beauté</strong> — Swissquote Magazine (photos&nbsp;: Nicolas Righetti)</div>
-      <div class="article-credit-item"><strong>Notker Blechner</strong> — Finanz und Wirtschaft (FuW)</div>
-      <div class="article-credit-item"><strong>Elisabeth Kim</strong> — PME Magazine</div>
-      <div class="article-credit-item"><strong>Maurice Satineau</strong> — Entreprise Romande & Grand Format</div>
     </div>
 
     <div class="article-tags">
