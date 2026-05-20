@@ -136,6 +136,29 @@
       .footer-top { grid-template-columns: 1fr; }
       .container { padding: 0 1.25rem; }
     }
+
+    /* Sélecteur de langue */
+    .nav-lang {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-left: 1rem;
+      padding-left: 1rem;
+      border-left: 1px solid rgba(255,255,255,0.12);
+    }
+    .nav-lang a {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.4);
+      text-transform: uppercase;
+      transition: color 0.2s;
+      padding: 2px 4px;
+    }
+    .nav-lang a:hover { color: rgba(255,255,255,0.85); }
+    .nav-lang a.active { color: #FAFAF8; }
+    .nav-lang-sep { color: rgba(255,255,255,0.2); font-size: 11px; }
   </style>
 </head>
 <body>
@@ -164,7 +187,15 @@
       <li><a href="blog/index.html">Blog</a></li>
       <li><a href="contact.html" class="nav-cta">Nous contacter</a></li>
     </ul>
-    <button class="nav-burger" aria-label="Menu" aria-expanded="false" onclick="toggleMenu(this)">
+
+    <div class="nav-lang">
+      <a href="../grand-raid.html" class="active">FR</a>
+      <span class="nav-lang-sep">|</span>
+      <a href="en/grand-raid.html">EN</a>
+      <span class="nav-lang-sep">|</span>
+      <a href="de/grand-raid.html">DE</a>
+    </div>
+        <button class="nav-burger" aria-label="Menu" aria-expanded="false" onclick="toggleMenu(this)">
       <span></span><span></span><span></span>
     </button>
   </div>
